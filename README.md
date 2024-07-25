@@ -1,5 +1,5 @@
 # Plumbed_3-Manifolds
-This is the python implementation of the Graph Neural Networks studied in [arXiv:24XX.XXXXX]{https://arxiv.org} based on PyTorch and PyTorch Geometric.
+This is the python implementation of the Graph Neural Networks studied in [arXiv:24XX.XXXXX](https://arxiv.org) based on PyTorch and PyTorch Geometric.
 
 ## Requirements
 - PyTorch 2.3.1
