@@ -16,3 +16,6 @@ The program is composed of three main pieces:
 The `utilities.py` file contains functions aimed to generate a Random Plumbing graph and perform Neumann moves on it to then generate homeomorphic or non-homeomorphic graphs pairs.
 In `torch_classe.py` all the Graph Neural Nework architectures are implemented together with the PyTorch dataclass we convert our graph to.
 Finally, the `Main_File.py` script contains the heart of the program: a database of graph pairs is generated and multiple network structures are trained on it. The resulting comparative accuracy on the test and validation sets plus the loss function evolution over the epoch are plotted and stored respectively in `img_accuracy.pdf` and `img_loss.pdf`.
+
+## Disclaimer
+The code can be ran on `cuda` devices but not on `mps` ones, since as of now the `torch_scatter` routine is not supported.
