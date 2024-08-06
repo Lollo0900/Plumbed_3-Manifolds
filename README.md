@@ -18,4 +18,4 @@ In `torch_classe.py` all the Graph Neural Nework architectures are implemented t
 Finally, the `Main_File.py` script contains the heart of the program: a database of graph pairs is generated and multiple network structures are trained on it. The resulting comparative accuracy on the test and validation sets plus the loss function evolution over the epoch are plotted and stored respectively in `img_accuracy.pdf` and `img_loss.pdf`.
 
 ## Disclaimer
-The code can be ran on `cuda` devices but not on `mps` ones, since as of now the `torch_scatter` routine is not supported.
+The code can be ran on `cuda` devices but not on `mps` ones, since as of now (August 2024) the `torch_scatter` routine is not supported.
