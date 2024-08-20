@@ -301,7 +301,7 @@ def RandomNeumannMove(G):
             G, result = R1_blowupB(G, v)
         else:
             G, result = R1_blowdownB(G, v)
-    elif move == "R1a":
+    elif move == "R1c":
         if updown:
             G, result = R1_blowupC(G, v)
         else:
