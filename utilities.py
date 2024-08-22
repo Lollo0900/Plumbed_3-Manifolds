@@ -4,6 +4,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import networkx as nx
 import random
+import copy
 
 
 def RandomPlumbing():
@@ -76,7 +77,7 @@ def R1_blowdownA(G, v):
 
 def R1_blowupA(G, v):
     done = False
-    n = len(G.nodes)
+    n = max(list(G.nodes))+1
     G.add_node(n, weight=random.choice([-1, 1]), genus=0, disks=0)
     G.nodes[v]['weight'] += G.nodes[n]['weight']
     G.add_edge(n, v, key=0, orientation=random.choice([-1, 1]))
@@ -114,7 +115,7 @@ def R1_blowupB(G, v):
         if l > 0:
             done = False
         else:
-            n = len(G.nodes)
+            n = n = max(list(G.nodes))+1
             G.add_node(n, weight=random.choice([-1, 1]), genus=0, disks=0)
             G.nodes[v]['weight'] += G.nodes[n]['weight']
             G.nodes[r]['weight'] += G.nodes[n]['weight']
@@ -148,27 +149,28 @@ def R1_blowdownC(G, v):
 
 def R1_blowupC(G, v):
     done = None
+    # Check if v has a self-loop
     if v in list(G.neighbors(v)):
-        n = len(G.nodes)
-        e0 = G[v][v][0]['orientation']
+        n = max(list(G.nodes))
+        key=max(G[v][v].keys())
+        e0 = G[v][v][key]['orientation']
         e = random.choice([-1, 1])
         G.nodes[v]['weight'] += 2 * e
         e1 = random.choice([-1, 1])
         e2 = -e * e0 * e1
-        G.remove_edge(v, v, key=0)
+        G.remove_edge(v, v)
         G.add_node(n, weight=e, genus=0, disks=0)
         G.add_edge(v, n, orientation=e1)
         G.add_edge(v, n, orientation=e2)
-        done = True
     else:
-        done = False
+        done = False  # No self-loop exists at all
     return G, done
 
 
 def R2_RP2_extrusion(G, v):
     done = None
     if G.nodes[v]['genus'] < 0:
-        n = len(G.nodes)
+        n = max(list(G.nodes))+1
         G.nodes[v]['genus'] += 1
         d1 = random.choice([-1, 1])
         d2 = random.choice([-1, 1])
@@ -229,7 +231,7 @@ def R4andR5_absorption(G, v):
 def R4_extrusion(G, v):
     done = None
     if G.nodes[v]['genus'] <= -2:
-        n = len(G.nodes)
+        n = max(list(G.nodes))+1
         G.add_node(n, weight=0, genus=0, disks=0)
         e = random.choice([-1, 1])
         G.add_edge(v, n, orientation=e)
@@ -244,7 +246,7 @@ def R4_extrusion(G, v):
 def R5_extrusion(G, v):
     done = None
     if G.nodes[v]['genus'] <= -3 or G.nodes[v]['genus'] >= 1:
-        n = len(G.nodes)
+        n = max(list(G.nodes))+1
         G.add_node(n, weight=0, genus=0, disks=0)
         e = random.choice([-1, 1])
         G.add_edge(v, n, orientation=e)
@@ -274,7 +276,7 @@ def R8_annulus_absorbtion(G, v):
 def R8_annulus_extrusion(G, v):
     done = False
     if G.nodes[v]['disks'] >= 1:
-        n = len(G.nodes)
+        n = max(list(G.nodes))+1
         G.add_node(n, weight=0, genus=0, disks=1)
         G.nodes[v]['disks'] -= 1
         G.add_edge(n, v, key=0, orientation=random.choice([-1, 1]))
@@ -332,7 +334,7 @@ def RandomNeumannMove(G):
 def EquivPair(Nmax):
     n1 = np.random.randint(1, Nmax + 1)
     G = RandomPlumbing()
-    G1 = G.copy()
+    G1 = copy.deepcopy(G)
     result = None
     result1 = None
     for i in range(n1):
@@ -362,7 +364,7 @@ def TweakPair(Nmax):
     result1 = None
     n1 = np.random.randint(1, Nmax + 1)
     G = RandomPlumbing()
-    G1 = G.copy()
+    G1 = copy.deepcopy(G)
     v = random.choice(list(G1.nodes))
     t = np.random.randint(1, 3 + 1) * random.choice([1, -1])
     G1.nodes[v]['weight'] += t

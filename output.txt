@@ -6,231 +6,231 @@ Using device: cpu
 ##### Training session #####
 Training NNConvGCN Model...
 ****Model saved at epoch0
-Epoch: 0000, Train Acc: 0.6682, Test Acc: 0.6724
+Epoch: 0000, Train Acc: 0.6730, Test Acc: 0.6684
 ****Model saved at epoch4
-****Model saved at epoch6
-****Model saved at epoch10
-Epoch: 0010, Train Acc: 0.6798, Test Acc: 0.6851
-Epoch: 0020, Train Acc: 0.6714, Test Acc: 0.6728
-Epoch: 0030, Train Acc: 0.6748, Test Acc: 0.6760
-Epoch: 0040, Train Acc: 0.6726, Test Acc: 0.6734
-Epoch: 0050, Train Acc: 0.6731, Test Acc: 0.6729
-Epoch: 0060, Train Acc: 0.6801, Test Acc: 0.6797
-Epoch: 0070, Train Acc: 0.6586, Test Acc: 0.6601
-Epoch: 0080, Train Acc: 0.6774, Test Acc: 0.6774
-Epoch: 0090, Train Acc: 0.6733, Test Acc: 0.6737
-Epoch: 0100, Train Acc: 0.6644, Test Acc: 0.6656
-Epoch: 0110, Train Acc: 0.6755, Test Acc: 0.6761
-Epoch: 0120, Train Acc: 0.6794, Test Acc: 0.6803
-Epoch: 0130, Train Acc: 0.6768, Test Acc: 0.6791
-Epoch: 0140, Train Acc: 0.6821, Test Acc: 0.6839
-****Model saved at epoch143
+Epoch: 0010, Train Acc: 0.6585, Test Acc: 0.6553
+Epoch: 0020, Train Acc: 0.6673, Test Acc: 0.6657
+****Model saved at epoch27
+Epoch: 0030, Train Acc: 0.6639, Test Acc: 0.6611
+Epoch: 0040, Train Acc: 0.6684, Test Acc: 0.6666
+Epoch: 0050, Train Acc: 0.6654, Test Acc: 0.6670
+Epoch: 0060, Train Acc: 0.6704, Test Acc: 0.6677
+Epoch: 0070, Train Acc: 0.6701, Test Acc: 0.6661
+****Model saved at epoch76
+Epoch: 0080, Train Acc: 0.6709, Test Acc: 0.6679
+Epoch: 0090, Train Acc: 0.6719, Test Acc: 0.6708
+****Model saved at epoch91
+Epoch: 0100, Train Acc: 0.6695, Test Acc: 0.6684
+Epoch: 0110, Train Acc: 0.6695, Test Acc: 0.6690
+Epoch: 0120, Train Acc: 0.6717, Test Acc: 0.6726
+Epoch: 0130, Train Acc: 0.6622, Test Acc: 0.6604
+Epoch: 0140, Train Acc: 0.6610, Test Acc: 0.6571
 ===========================================
 Train ACC:
-    Minimum  0.6284 
-    Maximum  0.6830 
+    Minimum  0.6498 
+    Maximum  0.6749 
 Test ACC:
-    Minimum  0.6317 
-    Maximum  0.6857 
+    Minimum  0.6502 
+    Maximum  0.6739 
 ===========================================
 Test Average ACC:
-    Mean  0.6775 
-    StDev  0.0049 
+    Mean  0.6661 
+    StDev  0.0039 
 Training GCNGCN Model...
 ****Model saved at epoch0
-Epoch: 0000, Train Acc: 0.6524, Test Acc: 0.6561
+Epoch: 0000, Train Acc: 0.6618, Test Acc: 0.6549
 ****Model saved at epoch1
-****Model saved at epoch7
-****Model saved at epoch8
-****Model saved at epoch10
-Epoch: 0010, Train Acc: 0.6756, Test Acc: 0.6754
-****Model saved at epoch14
-Epoch: 0020, Train Acc: 0.6696, Test Acc: 0.6691
-****Model saved at epoch21
-Epoch: 0030, Train Acc: 0.6731, Test Acc: 0.6726
-Epoch: 0040, Train Acc: 0.6713, Test Acc: 0.6713
-Epoch: 0050, Train Acc: 0.6733, Test Acc: 0.6712
-****Model saved at epoch56
-Epoch: 0060, Train Acc: 0.6616, Test Acc: 0.6602
-Epoch: 0070, Train Acc: 0.6669, Test Acc: 0.6663
-Epoch: 0080, Train Acc: 0.6790, Test Acc: 0.6811
-****Model saved at epoch81
-****Model saved at epoch86
-****Model saved at epoch88
-Epoch: 0090, Train Acc: 0.6825, Test Acc: 0.6843
-Epoch: 0100, Train Acc: 0.6738, Test Acc: 0.6744
-****Model saved at epoch106
-****Model saved at epoch110
-Epoch: 0110, Train Acc: 0.6941, Test Acc: 0.6924
-Epoch: 0120, Train Acc: 0.6917, Test Acc: 0.6907
-****Model saved at epoch129
-Epoch: 0130, Train Acc: 0.6916, Test Acc: 0.6892
-Epoch: 0140, Train Acc: 0.6888, Test Acc: 0.6895
+****Model saved at epoch2
+****Model saved at epoch9
+Epoch: 0010, Train Acc: 0.6657, Test Acc: 0.6625
+****Model saved at epoch18
+Epoch: 0020, Train Acc: 0.6683, Test Acc: 0.6642
+Epoch: 0030, Train Acc: 0.6700, Test Acc: 0.6667
+Epoch: 0040, Train Acc: 0.6606, Test Acc: 0.6592
+****Model saved at epoch50
+Epoch: 0050, Train Acc: 0.6697, Test Acc: 0.6704
+****Model saved at epoch54
+Epoch: 0060, Train Acc: 0.6721, Test Acc: 0.6679
+****Model saved at epoch67
+Epoch: 0070, Train Acc: 0.6691, Test Acc: 0.6673
+****Model saved at epoch75
+****Model saved at epoch77
+Epoch: 0080, Train Acc: 0.6714, Test Acc: 0.6702
+Epoch: 0090, Train Acc: 0.6686, Test Acc: 0.6647
+****Model saved at epoch98
+****Model saved at epoch99
+Epoch: 0100, Train Acc: 0.6731, Test Acc: 0.6702
+Epoch: 0110, Train Acc: 0.6746, Test Acc: 0.6706
+Epoch: 0120, Train Acc: 0.6704, Test Acc: 0.6652
+Epoch: 0130, Train Acc: 0.6619, Test Acc: 0.6601
+Epoch: 0140, Train Acc: 0.6624, Test Acc: 0.6626
 ===========================================
 Train ACC:
-    Minimum  0.6346 
-    Maximum  0.6946 
+    Minimum  0.6537 
+    Maximum  0.6788 
 Test ACC:
-    Minimum  0.6363 
-    Maximum  0.6940 
+    Minimum  0.6503 
+    Maximum  0.6744 
 ===========================================
 Test Average ACC:
-    Mean  0.6863 
-    StDev  0.0069 
+    Mean  0.6644 
+    StDev  0.0052 
 Training GCNGAT Model...
 ****Model saved at epoch0
-Epoch: 0000, Train Acc: 0.6521, Test Acc: 0.6516
+Epoch: 0000, Train Acc: 0.6472, Test Acc: 0.6466
 ****Model saved at epoch1
-****Model saved at epoch3
-****Model saved at epoch5
-Epoch: 0010, Train Acc: 0.6559, Test Acc: 0.6583
-Epoch: 0020, Train Acc: 0.6529, Test Acc: 0.6514
-Epoch: 0030, Train Acc: 0.6611, Test Acc: 0.6594
-Epoch: 0040, Train Acc: 0.6453, Test Acc: 0.6429
-Epoch: 0050, Train Acc: 0.6525, Test Acc: 0.6502
-****Model saved at epoch60
-Epoch: 0060, Train Acc: 0.6677, Test Acc: 0.6691
-Epoch: 0070, Train Acc: 0.6607, Test Acc: 0.6621
-Epoch: 0080, Train Acc: 0.6588, Test Acc: 0.6579
-****Model saved at epoch85
-Epoch: 0090, Train Acc: 0.6627, Test Acc: 0.6651
-Epoch: 0100, Train Acc: 0.6622, Test Acc: 0.6611
-Epoch: 0110, Train Acc: 0.6618, Test Acc: 0.6601
-Epoch: 0120, Train Acc: 0.6682, Test Acc: 0.6694
-Epoch: 0130, Train Acc: 0.6628, Test Acc: 0.6603
-Epoch: 0140, Train Acc: 0.6520, Test Acc: 0.6529
+****Model saved at epoch2
+Epoch: 0010, Train Acc: 0.6459, Test Acc: 0.6471
+****Model saved at epoch11
+Epoch: 0020, Train Acc: 0.6479, Test Acc: 0.6449
+Epoch: 0030, Train Acc: 0.6544, Test Acc: 0.6521
+Epoch: 0040, Train Acc: 0.6557, Test Acc: 0.6516
+Epoch: 0050, Train Acc: 0.6613, Test Acc: 0.6572
+****Model saved at epoch57
+Epoch: 0060, Train Acc: 0.6631, Test Acc: 0.6596
+Epoch: 0070, Train Acc: 0.6552, Test Acc: 0.6544
+****Model saved at epoch74
+Epoch: 0080, Train Acc: 0.6552, Test Acc: 0.6559
+Epoch: 0090, Train Acc: 0.6631, Test Acc: 0.6576
+Epoch: 0100, Train Acc: 0.6624, Test Acc: 0.6587
+Epoch: 0110, Train Acc: 0.6582, Test Acc: 0.6538
+Epoch: 0120, Train Acc: 0.6530, Test Acc: 0.6506
+Epoch: 0130, Train Acc: 0.6538, Test Acc: 0.6520
+Epoch: 0140, Train Acc: 0.6595, Test Acc: 0.6548
 ===========================================
 Train ACC:
-    Minimum  0.6284 
-    Maximum  0.6711 
+    Minimum  0.6393 
+    Maximum  0.6663 
 Test ACC:
-    Minimum  0.6264 
-    Maximum  0.6749 
+    Minimum  0.6365 
+    Maximum  0.6649 
 ===========================================
 Test Average ACC:
-    Mean  0.6634 
-    StDev  0.0056 
+    Mean  0.6544 
+    StDev  0.0055 
 Training NNConvNNConv Model...
 ****Model saved at epoch0
-Epoch: 0000, Train Acc: 0.6297, Test Acc: 0.6315
+Epoch: 0000, Train Acc: 0.6216, Test Acc: 0.6158
 ****Model saved at epoch1
 ****Model saved at epoch2
 ****Model saved at epoch3
-Epoch: 0010, Train Acc: 0.6570, Test Acc: 0.6566
-****Model saved at epoch14
-****Model saved at epoch15
-Epoch: 0020, Train Acc: 0.6561, Test Acc: 0.6536
-****Model saved at epoch23
+Epoch: 0010, Train Acc: 0.6542, Test Acc: 0.6461
+****Model saved at epoch13
+Epoch: 0020, Train Acc: 0.6542, Test Acc: 0.6505
+****Model saved at epoch22
+****Model saved at epoch27
 ****Model saved at epoch28
 ****Model saved at epoch29
 ****Model saved at epoch30
-Epoch: 0030, Train Acc: 0.6738, Test Acc: 0.6727
-****Model saved at epoch35
-****Model saved at epoch36
-Epoch: 0040, Train Acc: 0.6747, Test Acc: 0.6714
-****Model saved at epoch48
-Epoch: 0050, Train Acc: 0.6830, Test Acc: 0.6803
-Epoch: 0060, Train Acc: 0.6719, Test Acc: 0.6717
-****Model saved at epoch63
-Epoch: 0070, Train Acc: 0.6671, Test Acc: 0.6616
-****Model saved at epoch79
-Epoch: 0080, Train Acc: 0.6729, Test Acc: 0.6740
-Epoch: 0090, Train Acc: 0.6830, Test Acc: 0.6821
-Epoch: 0100, Train Acc: 0.6775, Test Acc: 0.6794
-Epoch: 0110, Train Acc: 0.6813, Test Acc: 0.6814
-Epoch: 0120, Train Acc: 0.6706, Test Acc: 0.6706
-****Model saved at epoch130
-Epoch: 0130, Train Acc: 0.6864, Test Acc: 0.6866
-Epoch: 0140, Train Acc: 0.6834, Test Acc: 0.6855
-****Model saved at epoch143
-****Model saved at epoch144
+Epoch: 0030, Train Acc: 0.6624, Test Acc: 0.6619
+****Model saved at epoch31
+****Model saved at epoch32
+****Model saved at epoch33
+Epoch: 0040, Train Acc: 0.6692, Test Acc: 0.6651
+****Model saved at epoch42
+****Model saved at epoch47
+Epoch: 0050, Train Acc: 0.6681, Test Acc: 0.6661
+Epoch: 0060, Train Acc: 0.6694, Test Acc: 0.6645
+****Model saved at epoch61
+Epoch: 0070, Train Acc: 0.6710, Test Acc: 0.6685
+Epoch: 0080, Train Acc: 0.6730, Test Acc: 0.6713
+****Model saved at epoch81
+****Model saved at epoch85
+Epoch: 0090, Train Acc: 0.6779, Test Acc: 0.6774
+Epoch: 0100, Train Acc: 0.6669, Test Acc: 0.6669
+Epoch: 0110, Train Acc: 0.6768, Test Acc: 0.6741
+Epoch: 0120, Train Acc: 0.6666, Test Acc: 0.6654
+Epoch: 0130, Train Acc: 0.6777, Test Acc: 0.6727
+Epoch: 0140, Train Acc: 0.6756, Test Acc: 0.6723
 ===========================================
 Train ACC:
-    Minimum  0.6275 
-    Maximum  0.6864 
+    Minimum  0.6216 
+    Maximum  0.6788 
 Test ACC:
-    Minimum  0.6289 
-    Maximum  0.6900 
+    Minimum  0.6158 
+    Maximum  0.6781 
 ===========================================
 Test Average ACC:
-    Mean  0.6810 
-    StDev  0.0059 
+    Mean  0.6698 
+    StDev  0.0047 
 Training NNConvGAT Model...
 ****Model saved at epoch0
-Epoch: 0000, Train Acc: 0.6098, Test Acc: 0.6020
+Epoch: 0000, Train Acc: 0.6222, Test Acc: 0.6200
 ****Model saved at epoch1
-****Model saved at epoch2
-****Model saved at epoch7
-Epoch: 0010, Train Acc: 0.6381, Test Acc: 0.6386
-****Model saved at epoch17
-Epoch: 0020, Train Acc: 0.6429, Test Acc: 0.6391
-Epoch: 0030, Train Acc: 0.6342, Test Acc: 0.6307
-Epoch: 0040, Train Acc: 0.6392, Test Acc: 0.6376
-****Model saved at epoch48
-****Model saved at epoch49
-Epoch: 0050, Train Acc: 0.6436, Test Acc: 0.6462
-****Model saved at epoch52
-****Model saved at epoch59
-Epoch: 0060, Train Acc: 0.6580, Test Acc: 0.6562
-****Model saved at epoch63
-****Model saved at epoch68
-Epoch: 0070, Train Acc: 0.6600, Test Acc: 0.6581
-Epoch: 0080, Train Acc: 0.6495, Test Acc: 0.6481
-Epoch: 0090, Train Acc: 0.6471, Test Acc: 0.6452
-Epoch: 0100, Train Acc: 0.6632, Test Acc: 0.6619
-Epoch: 0110, Train Acc: 0.6589, Test Acc: 0.6604
-****Model saved at epoch114
-Epoch: 0120, Train Acc: 0.6556, Test Acc: 0.6516
-Epoch: 0130, Train Acc: 0.6505, Test Acc: 0.6511
-Epoch: 0140, Train Acc: 0.6546, Test Acc: 0.6510
-****Model saved at epoch144
-===========================================
-Train ACC:
-    Minimum  0.6098 
-    Maximum  0.6665 
-Test ACC:
-    Minimum  0.6020 
-    Maximum  0.6684 
-===========================================
-Test Average ACC:
-    Mean  0.6526 
-    StDev  0.0101 
-Training GENGAT Model...
-****Model saved at epoch0
-Epoch: 0000, Train Acc: 0.6192, Test Acc: 0.6123
-****Model saved at epoch1
-****Model saved at epoch2
 ****Model saved at epoch5
 ****Model saved at epoch6
 ****Model saved at epoch7
-****Model saved at epoch9
-Epoch: 0010, Train Acc: 0.6599, Test Acc: 0.6599
-****Model saved at epoch13
-****Model saved at epoch17
-****Model saved at epoch19
-Epoch: 0020, Train Acc: 0.6524, Test Acc: 0.6531
-Epoch: 0030, Train Acc: 0.6754, Test Acc: 0.6721
-Epoch: 0040, Train Acc: 0.6745, Test Acc: 0.6727
-Epoch: 0050, Train Acc: 0.6703, Test Acc: 0.6668
-Epoch: 0060, Train Acc: 0.6694, Test Acc: 0.6707
-Epoch: 0070, Train Acc: 0.6476, Test Acc: 0.6426
-Epoch: 0080, Train Acc: 0.6557, Test Acc: 0.6563
-Epoch: 0090, Train Acc: 0.6745, Test Acc: 0.6729
-Epoch: 0100, Train Acc: 0.6737, Test Acc: 0.6676
-Epoch: 0110, Train Acc: 0.6717, Test Acc: 0.6681
-Epoch: 0120, Train Acc: 0.6427, Test Acc: 0.6399
-Epoch: 0130, Train Acc: 0.6656, Test Acc: 0.6629
-Epoch: 0140, Train Acc: 0.6738, Test Acc: 0.6749
+****Model saved at epoch8
+Epoch: 0010, Train Acc: 0.6318, Test Acc: 0.6259
+Epoch: 0020, Train Acc: 0.6289, Test Acc: 0.6282
+****Model saved at epoch26
+Epoch: 0030, Train Acc: 0.6430, Test Acc: 0.6360
+****Model saved at epoch32
+****Model saved at epoch38
+****Model saved at epoch39
+Epoch: 0040, Train Acc: 0.6538, Test Acc: 0.6473
+Epoch: 0050, Train Acc: 0.6417, Test Acc: 0.6382
+Epoch: 0060, Train Acc: 0.6430, Test Acc: 0.6384
+Epoch: 0070, Train Acc: 0.6421, Test Acc: 0.6401
+Epoch: 0080, Train Acc: 0.6547, Test Acc: 0.6505
+****Model saved at epoch84
+****Model saved at epoch87
+Epoch: 0090, Train Acc: 0.6452, Test Acc: 0.6437
+Epoch: 0100, Train Acc: 0.6272, Test Acc: 0.6273
+Epoch: 0110, Train Acc: 0.6294, Test Acc: 0.6281
+Epoch: 0120, Train Acc: 0.6331, Test Acc: 0.6293
+Epoch: 0130, Train Acc: 0.6307, Test Acc: 0.6224
+Epoch: 0140, Train Acc: 0.6396, Test Acc: 0.6338
 ===========================================
 Train ACC:
-    Minimum  0.6192 
-    Maximum  0.6855 
+    Minimum  0.6170 
+    Maximum  0.6677 
 Test ACC:
-    Minimum  0.6123 
-    Maximum  0.6827 
+    Minimum  0.6142 
+    Maximum  0.6629 
 ===========================================
 Test Average ACC:
-    Mean  0.6655 
-    StDev  0.0113 
+    Mean  0.6336 
+    StDev  0.0093 
+Training GENGAT Model...
+****Model saved at epoch0
+Epoch: 0000, Train Acc: 0.6345, Test Acc: 0.6284
+****Model saved at epoch2
+****Model saved at epoch4
+****Model saved at epoch8
+****Model saved at epoch10
+Epoch: 0010, Train Acc: 0.6475, Test Acc: 0.6444
+****Model saved at epoch11
+****Model saved at epoch12
+****Model saved at epoch17
+Epoch: 0020, Train Acc: 0.6632, Test Acc: 0.6599
+****Model saved at epoch21
+Epoch: 0030, Train Acc: 0.6626, Test Acc: 0.6581
+Epoch: 0040, Train Acc: 0.6612, Test Acc: 0.6586
+Epoch: 0050, Train Acc: 0.6534, Test Acc: 0.6505
+****Model saved at epoch51
+Epoch: 0060, Train Acc: 0.6598, Test Acc: 0.6559
+****Model saved at epoch68
+****Model saved at epoch69
+Epoch: 0070, Train Acc: 0.6683, Test Acc: 0.6643
+Epoch: 0080, Train Acc: 0.6502, Test Acc: 0.6515
+Epoch: 0090, Train Acc: 0.6627, Test Acc: 0.6625
+Epoch: 0100, Train Acc: 0.6735, Test Acc: 0.6694
+****Model saved at epoch109
+Epoch: 0110, Train Acc: 0.6689, Test Acc: 0.6659
+Epoch: 0120, Train Acc: 0.6677, Test Acc: 0.6659
+Epoch: 0130, Train Acc: 0.6658, Test Acc: 0.6674
+Epoch: 0140, Train Acc: 0.6598, Test Acc: 0.6613
+===========================================
+Train ACC:
+    Minimum  0.6069 
+    Maximum  0.6747 
+Test ACC:
+    Minimum  0.5998 
+    Maximum  0.6719 
+===========================================
+Test Average ACC:
+    Mean  0.6616 
+    StDev  0.0134 
 ##### Finished Training Session #####
 ===========================================

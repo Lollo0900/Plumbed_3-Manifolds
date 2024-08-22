@@ -10,7 +10,11 @@ from torch_geometric.utils.convert import from_networkx
 def extract_graph_data(G):
     pyg_graph = from_networkx(G)
     node_feature = torch.stack((pyg_graph.weight, pyg_graph.genus, pyg_graph.disks), dim=1)
-    edge_attr = pyg_graph.orientation
+    if pyg_graph.edge_index.size(1) == 0:  # Check if edge_index is empty
+        # No edges
+        edge_attr = torch.zeros((0, 1))
+    else:
+        edge_attr = pyg_graph.orientation
     edge_attr = edge_attr.view(-1, 1)
     edge_idx = pyg_graph.edge_index
     node_feature = node_feature.float()
@@ -28,11 +32,11 @@ def DataBaseGenerator(n_equiv, n_inequiv, n_tweak, Nmax):
                       edge_index_t=edge_idx_t, edge_attr_t=edge_attr_t, x_t=node_feature_t,
                       y=torch.tensor([1])))
     for i in range(n_inequiv):
-            G, G1, indicator = InequivPair(Nmax)
-            node_feature_s, edge_idx_s, edge_attr_s = extract_graph_data(G)
-            node_feature_t, edge_idx_t, edge_attr_t = extract_graph_data(G1)
-            data.append(
-                GraphPair(edge_index_s=edge_idx_s, edge_attr_s=edge_attr_s, x_s=node_feature_s,
+        G, G1, indicator = InequivPair(Nmax)
+        node_feature_s, edge_idx_s, edge_attr_s = extract_graph_data(G)
+        node_feature_t, edge_idx_t, edge_attr_t = extract_graph_data(G1)
+        data.append(
+            GraphPair(edge_index_s=edge_idx_s, edge_attr_s=edge_attr_s, x_s=node_feature_s,
                       edge_index_t=edge_idx_t, edge_attr_t=edge_attr_t, x_t=node_feature_t,
                       y=torch.tensor([0])))
     for i in range(n_tweak):
