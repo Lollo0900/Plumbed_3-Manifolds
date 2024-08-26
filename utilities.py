@@ -115,7 +115,7 @@ def R1_blowupB(G, v):
         if l > 0:
             done = False
         else:
-            n = n = max(list(G.nodes))+1
+            n = max(list(G.nodes))+1
             G.add_node(n, weight=random.choice([-1, 1]), genus=0, disks=0)
             G.nodes[v]['weight'] += G.nodes[n]['weight']
             G.nodes[r]['weight'] += G.nodes[n]['weight']
@@ -151,7 +151,7 @@ def R1_blowupC(G, v):
     done = None
     # Check if v has a self-loop
     if v in list(G.neighbors(v)):
-        n = max(list(G.nodes))
+        n = max(list(G.nodes))+1
         key=max(G[v][v].keys())
         e0 = G[v][v][key]['orientation']
         e = random.choice([-1, 1])
